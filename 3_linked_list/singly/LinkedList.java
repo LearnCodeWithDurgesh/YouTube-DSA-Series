@@ -4,6 +4,8 @@ public class LinkedList {
     Node head = null;
 
     //    insert at beginning
+    // operations : it does not depend on the length of the list
+    // O(1)
     public void insertAtBeginning(int item) {
         Node newNode = new Node(item);
         if (head == null) {
@@ -16,6 +18,8 @@ public class LinkedList {
     }
 
     //insert at last:
+    //last insert: operations -> depends on the length of list:
+    // O(n)
     public void insertAtEnd(int item) {
         Node newNode = new Node(item);
         if (head == null) {
@@ -35,6 +39,9 @@ public class LinkedList {
     }
 
     //insert at specific position=2
+    // Operations: depend the length of the list
+    // O(n)
+
     public void insertAtPosition(int item, int position) {
 
         //new node created to insert
@@ -73,6 +80,8 @@ public class LinkedList {
 
     }
 
+    // Depends on the length of the list.
+    // O(n)
     public void printData() {
         if (head == null) {
             System.out.println("LinkedList is empty!");
@@ -92,6 +101,7 @@ public class LinkedList {
     }
 
     //delete from beginning
+    //O(1)
     public void deleteFirst() {
         if (head == null) {
             System.out.println("List is empty !! no nodes to delete");
@@ -104,6 +114,8 @@ public class LinkedList {
     }
 
     //delete from last
+    //operations: depends on the length of the list.
+    //O(n)
     public void deleteLast() {
         if (head == null) {
             System.out.println("List is empty! no nodes to delete");
@@ -121,7 +133,7 @@ public class LinkedList {
     }
 
     //delete from specific position
-
+    //O(n)
     public void deleteFromPosition(int position) {
         if (head == null) {
             System.out.println("List is empty !!");
@@ -147,6 +159,8 @@ public class LinkedList {
 
 
     }
+
+    //O(n)
 
     public boolean searchData(int data) {
 
