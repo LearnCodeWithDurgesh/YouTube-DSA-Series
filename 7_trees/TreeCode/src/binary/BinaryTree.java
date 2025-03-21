@@ -3,16 +3,12 @@ package binary;
 public class BinaryTree {
 
     Node root;
-
     public BinaryTree(Node root) {
         this.root = root;
     }
-
     public BinaryTree() {
         this.root = null;
     }
-
-
     //DFS
     //Preorder--> ROOT-->Left----->Right
     public void preOrder(Node node) {
@@ -25,7 +21,6 @@ public class BinaryTree {
 
 
     }
-
     //Inorder--> Left-->Root-->Right
 
     public void inOrder(Node node) {
